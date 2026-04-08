@@ -4,6 +4,7 @@ from numpy.typing import NDArray
 
 class logistic_regression:
     def __init__(self, x: NDArray[np.float64], seed: int = 123):
+        # initialisation des poids du modèles
         m, n = x.shape
         np.random.seed(seed=seed)
         self._w = np.random.rand(n + 1, 1)

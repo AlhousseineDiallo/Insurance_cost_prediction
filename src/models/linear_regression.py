@@ -6,7 +6,7 @@ class linear_regression:
     def __init__(self, x: NDArray[np.float64], seed=123):
         m, n = x.shape
         np.random.seed(seed=seed)
-        self._w = np.random.rand(m + 1, 1)
+        self._w = np.random.rand(n + 1, 1)
 
     def predict(self, x: NDArray[np.float64]):
         """Prédictions du modèle.
